@@ -39,6 +39,6 @@ INSERT INTO erynfall_hiscores (player_name, skill_overall_level, skill_overall_x
 
 -- Insert dummy news
 INSERT INTO erynfall_news (title, slug, category, content, created_at) VALUES 
-('Sprint 3: Inventory & Loot System', 'sprint-3-inventory-loot', 'Update', 'Implementations now include a comprehensive 28-slot inventory, equipment loadouts, and drag-and-drop support, alongside OSRS-accurate ground item generation through drop tables.', now() - interval '1 day'),
-('Sprint 2: NPC Combat AI & Animation', 'sprint-2-npc-combat', 'Dev Blog', 'NPCs now support dynamic positioning, approach-and-act behavior, and OSRS-accurate combat stats. We''ve also integrated the core combat style XP system and walk + 3-tick item pickup animations.', now() - interval '10 days'),
+('Sprint 3: Inventory & Loot System', 'sprint-3-inventory-loot', 'Update', 'Implementations now include a comprehensive 28-slot inventory, equipment loadouts, and drag-and-drop support, alongside authentic ground item generation through realistic drop tables.', now() - interval '1 day'),
+('Sprint 2: NPC Combat AI & Animation', 'sprint-2-npc-combat', 'Dev Blog', 'NPCs now support dynamic positioning, approach-and-act behavior, and authentic robust combat stats. We''ve also integrated the core combat style XP system and walk + 3-tick item pickup animations.', now() - interval '10 days'),
 ('Sprint 1.5: Core Architecture & Database', 'sprint-1-5-database', 'Announcement', 'The canonical 14-table SQL schema is successfully deployed with HikariCP connection pooling, ensuring robust data persistence directly tied to our high-performance 256-tick Netty architecture.', now() - interval '30 days');

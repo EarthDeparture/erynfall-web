@@ -70,16 +70,16 @@ export default async function Home() {
               <h3 className="sidebar-title">Tech &amp; Features</h3>
               <ul className="feature-list">
                 <li><span className="feature-icon">⚡</span><div className="feature-detail"><strong>256-Tick Architecture</strong>Custom Netty 4.1 server running a 256 Hz tick loop for ultra-smooth state synchronization.</div></li>
-                <li><span className="feature-icon">⚔️</span><div className="feature-detail"><strong>Authentic Combat</strong>OSRS combat style XP systems, including walk+3-tick animation logic and accurate pathing.</div></li>
+                <li><span className="feature-icon">⚔️</span><div className="feature-detail"><strong>Authentic Combat</strong>Authentic combat style XP systems, including walk+3-tick animation logic and accurate pathing.</div></li>
                 <li><span className="feature-icon">🎒</span><div className="feature-detail"><strong>Expanded Inventory</strong>Full 28-slot tracking, flexible equipment management, and comprehensive loot table generation.</div></li>
                 <li><span className="feature-icon">🎮</span><div className="feature-detail"><strong>Custom Flat Engine</strong>Client rendered via LibGDX 1.13 featuring 2D isometric environments and dynamic UI panels.</div></li>
               </ul>
             </div>
             
             <div className="sidebar-box mt-20">
-              <h3 className="sidebar-title text-center">A True OSRS Framework</h3>
+              <h3 className="sidebar-title text-center">A True Classic Framework</h3>
               <p className="about-snippit">
-                Erynfall is a massive Java 21 MMORPG project built from the ground up, combining standard Netty networking with LibGDX graphics to accurately replicate Old School mechanics and gameplay loops.
+                Erynfall is a massive Java 21 MMORPG project built from the ground up, combining standard Netty networking with LibGDX graphics to accurately replicate classic MMORPG mechanics and gameplay loops.
               </p>
             </div>
 
