@@ -1,0 +1,466 @@
+@import "tailwindcss";
+
+/* ---------- Modern OSRS Aesthetic CSS ---------- */
+
+/* Core Variables & Reset */
+:root {
+  --bg-dark: #0f0d0a;
+  --bg-parchment: #e6dfc7;
+  --bg-parchment-dark: #d5ccb0;
+  --bg-parchment-inner: #ece4cd;
+  --text-dark: #3a2914;
+  --text-light: #e5cc98;
+  --gold-primary: #e5cc98;
+  --gold-dark: #ad9459;
+  --border-dark: #2a1f13;
+  --border-medium: #5a4428;
+  --border-light: #896e49;
+  --brand-red: #7c1a1a;
+  --brand-red-hover: #9e2121;
+}
+
+body {
+  background-color: var(--bg-dark);
+  /* The iconic radial dark stone back drop */
+  background-image: 
+    radial-gradient(circle at top, #1a1511 0%, var(--bg-dark) 100%),
+    url('https://www.transparenttextures.com/patterns/black-scales.png');
+  color: var(--text-dark);
+  line-height: 1.5;
+  font-size: 13px;
+}
+
+.font-cinzel { font-family: 'Cinzel', serif; }
+.font-metamorphous { font-family: 'Metamorphous', serif; }
+.font-verdana { font-family: Verdana, Arial, sans-serif; }
+
+a {
+  color: #633306;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a8580b;
+  text-decoration: underline;
+}
+
+/* ---------- NAV BAR ---------- */
+.os-nav {
+  background: #110e0a;
+  border-bottom: 2px solid var(--border-medium);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.8);
+  position: relative;
+  z-index: 50;
+}
+
+.nav-inner {
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-link {
+  font-family: 'Cinzel', serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--gold-dark);
+  padding: 16px 28px;
+  border-left: 1px solid #23190f;
+  border-right: 1px solid #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.2s;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.nav-link:last-child {
+  border-right: 1px solid #23190f;
+}
+
+.nav-link:hover, .nav-link.active {
+  background: #1e160e;
+  color: var(--gold-primary);
+  text-decoration: none;
+  box-shadow: inset 0 20px 20px -20px var(--gold-dark);
+}
+
+/* ---------- SITE WRAPPER ---------- */
+.site-wrapper {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* ---------- HEADER / LOGO ---------- */
+.header-area {
+  padding: 40px 0 20px;
+  position: relative;
+}
+
+.erynfall-logo {
+  font-family: 'Metamorphous', serif;
+  font-size: 72px;
+  color: #ffde82;
+  text-shadow: 
+    3px 3px 0 #3a1c02, 
+    -1px -1px 0 #3a1c02, 
+    1px -1px 0 #3a1c02, 
+    -1px 1px 0 #3a1c02, 
+    0 10px 20px rgba(0,0,0,0.8);
+  letter-spacing: 5px;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.erynfall-slogan {
+  font-family: 'Cinzel', serif;
+  color: var(--gold-dark);
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  text-shadow: 1px 1px 2px #000;
+}
+
+/* ---------- CTA BANNER ---------- */
+.cta-banner {
+  margin: 20px auto 30px;
+  max-width: 800px;
+  position: relative;
+  z-index: 10;
+}
+
+.cta-inner {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.btn-osrs {
+  display: block;
+  width: 260px;
+  padding: 12px 10px;
+  border-radius: 4px;
+  text-align: center;
+  border: 2px solid #2c1e10;
+  box-shadow: 
+    0 5px 15px rgba(0,0,0,0.6), 
+    inset 0 1px 1px rgba(255,255,255,0.4),
+    inset 0 -5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.1s, filter 0.2s;
+}
+
+.btn-osrs:hover {
+  text-decoration: none;
+  filter: brightness(1.15);
+  transform: translateY(-2px);
+}
+
+.btn-osrs:active {
+  transform: translateY(1px);
+  box-shadow: 
+    0 2px 5px rgba(0,0,0,0.6), 
+    inset 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.btn-play {
+  background: linear-gradient(to bottom, #d23232 0%, var(--brand-red) 50%, #4a0f0f 100%);
+  border-color: #380a0a;
+}
+
+.btn-create {
+  background: linear-gradient(to bottom, #f2d16b 0%, #b89332 50%, #6e5414 100%);
+  border-color: #3b2b06;
+}
+
+.btn-text {
+  display: block;
+  font-family: 'Metamorphous', serif;
+  font-size: 28px;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 #000;
+  line-height: 1.1;
+}
+
+.btn-create .btn-text {
+  color: #fff;
+  text-shadow: 2px 2px 0 #3b2b06;
+}
+
+.btn-sub {
+  display: block;
+  font-family: 'Cinzel', serif;
+  font-size: 14px;
+  color: #ffdf9e;
+  text-shadow: 1px 1px 1px #000;
+  margin-top: 2px;
+  font-weight: 700;
+}
+
+/* ---------- MAIN CONTENT (The Scroll) ---------- */
+.main-content {
+  background-color: var(--bg-parchment);
+  background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png');
+  border: 4px solid var(--border-medium);
+  border-radius: 4px;
+  box-shadow: 
+    0 0 0 1px #000,
+    0 15px 40px rgba(0,0,0,0.9),
+    inset 0 0 50px rgba(89, 68, 40, 0.4);
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.deco-separator {
+  height: 12px;
+  background: linear-gradient(90deg, transparent, var(--border-medium), transparent);
+  margin: 0 40px;
+  position: relative;
+  top: 15px;
+}
+.bottom-sep {
+  top: auto;
+  bottom: 15px;
+}
+
+.content-grid {
+  display: flex;
+  padding: 40px 30px;
+  gap: 30px;
+}
+
+/* ---------- LEFT COLUMN: NEWS FEED ---------- */
+.news-column {
+  flex: 2;
+}
+
+.section-title {
+  font-family: 'Cinzel', serif;
+  font-size: 32px;
+  color: #523414;
+  border-bottom: 2px solid #a88d67;
+  padding-bottom: 8px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+.news-post {
+  background-color: var(--bg-parchment-inner);
+  border: 1px solid #bba37f;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.05), 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 25px;
+  border-radius: 2px;
+}
+
+.post-header {
+  background: linear-gradient(to bottom, #dcd1af, #cabb98);
+  border-bottom: 1px solid #bba37f;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.post-category {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 2px;
+  color: #fff;
+  margin-right: 12px;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.5);
+}
+
+.post-category.update { background-color: var(--brand-red); border: 1px solid #4a0f0f; }
+.post-category.devblog { background-color: #2b5687; border: 1px solid #142a42; }
+.post-category.announcement { background-color: #2d6b33; border: 1px solid #102e13; }
+
+.post-title h3 {
+  margin: 0;
+  font-family: 'Cinzel', serif;
+  font-size: 18px;
+}
+
+.post-title a {
+  color: #49311c;
+}
+
+.post-date {
+  margin-left: auto;
+  font-size: 11px;
+  color: #725b44;
+  font-weight: bold;
+}
+
+.post-body {
+  padding: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+.post-thumbnail {
+  width: 120px;
+  height: 80px;
+  background-color: #333;
+  border: 2px solid #5a4428;
+  flex-shrink: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Pseudo images for thumbnails */
+.thumbnail-1 { background-image: linear-gradient(135deg, #443221, #1a130c); }
+.thumbnail-2 { background-image: linear-gradient(135deg, #2b3924, #121a0e); }
+.thumbnail-3 { background-image: linear-gradient(135deg, #292a39, #0f101a); }
+
+.post-text p {
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.read-more {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.archive-btn {
+  display: inline-block;
+  background-color: #c9b996;
+  border: 1px solid #a88d67;
+  padding: 8px 15px;
+  font-weight: bold;
+  font-size: 12px;
+  color: #49311c;
+  border-radius: 2px;
+}
+
+.archive-btn:hover {
+  background-color: #dcd1af;
+  text-decoration: none;
+}
+
+/* ---------- RIGHT COLUMN: SIDEBAR ---------- */
+.sidebar-column {
+  flex: 1;
+}
+
+.sidebar-box {
+  background-color: var(--bg-parchment-inner);
+  border: 1px solid #bba37f;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.05), 0 2px 5px rgba(0,0,0,0.1);
+  padding: 15px;
+  border-radius: 2px;
+}
+
+.sidebar-title {
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+  color: #523414;
+  border-bottom: 1px solid #a88d67;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.feature-list {
+  list-style: none;
+}
+
+.feature-list li {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+
+.feature-icon {
+  font-size: 24px;
+  filter: drop-shadow(1px 1px 0px rgba(0,0,0,0.2));
+}
+
+.feature-detail strong {
+  display: block;
+  font-size: 14px;
+  font-family: 'Cinzel', serif;
+  color: #49311c;
+  margin-bottom: 2px;
+}
+
+.about-snippit {
+  font-size: 13px;
+  text-align: center;
+}
+
+.support-box {
+  background: linear-gradient(to bottom, #392b1a, #23190e);
+  color: var(--bg-parchment);
+  border-color: #110c07;
+  text-align: center;
+}
+
+.support-box h3 {
+  color: #ffde82;
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.support-box p {
+  font-size: 12px;
+  margin-bottom: 15px;
+  color: #cdb99f;
+}
+
+.support-btn {
+  display: inline-block;
+  background-color: #8c6a2e;
+  color: #fff;
+  border: 1px solid #4a3411;
+  padding: 6px 16px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.support-btn:hover {
+  background-color: #ad8640;
+  text-decoration: none;
+}
+
+/* ---------- FOOTER ---------- */
+.site-footer {
+  padding: 10px 0 30px;
+  color: #86745f;
+  font-size: 12px;
+}
+
+.site-footer a {
+  color: #ad9459;
+}
+
+.site-footer a:hover {
+  color: #ffde82;
+}
+
+/* Markdown Support */
+.markdown-content h1, .markdown-content h2, .markdown-content h3 {
+  font-family: 'Cinzel', serif;
+  color: #523414;
+  border-bottom: 2px solid #a88d67;
+  padding-bottom: 8px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.markdown-content p {
+  margin-bottom: 15px;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .content-grid { flex-direction: column; }
+  .cta-inner { flex-direction: column; align-items: center; }
+  .post-body { flex-direction: column; }
+  .post-thumbnail { width: 100%; height: 160px; }
+  .post-header { flex-wrap: wrap; }
+  .post-date { margin-left: 0; width: 100%; margin-top: 5px; }
+}
