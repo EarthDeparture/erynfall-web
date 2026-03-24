@@ -31,6 +31,7 @@ export default function RootLayout({
             <Link href="/guide" className="nav-link">Game Guide</Link>
             <Link href="/hiscores" className="nav-link">Hiscores</Link>
             <Link href="/status" className="nav-link">Status</Link>
+            <Link href="/support" className="nav-link">Support</Link>
             <a href="https://discord.gg/WNeMywCP" target="_blank" rel="noreferrer" className="nav-link">Community</a>
             <Link href="/membership" className="nav-link">Membership</Link>
             <a href="https://wiki.erynfall.com" target="_blank" rel="noreferrer" className="nav-link">Wiki</a>
@@ -50,7 +51,7 @@ export default function RootLayout({
 
           <footer className="site-footer text-center">
             <p>This website and its contents are copyright &copy; 2026 Erynfall.</p>
-            <p>Use of this website is subject to our <Link href="#">Terms &amp; Conditions</Link> and <Link href="#">Privacy Policy</Link>.</p>
+            <p>Use of this website is subject to our <Link href="/terms">Terms &amp; Conditions</Link> and <Link href="/privacy">Privacy Policy</Link>.</p>
           </footer>
 
         </div>
