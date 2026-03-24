@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* ---------- Modern OSRS Aesthetic CSS ---------- */
+/* ---------- Classic MMORPG Aesthetic CSS ---------- */
 
 /* Core Variables & Reset */
 :root {
@@ -136,7 +136,7 @@ a:hover {
   gap: 30px;
 }
 
-.btn-osrs {
+.btn-classic {
   display: block;
   width: 260px;
   padding: 12px 10px;
@@ -150,13 +150,13 @@ a:hover {
   transition: transform 0.1s, filter 0.2s;
 }
 
-.btn-osrs:hover {
+.btn-classic:hover {
   text-decoration: none;
   filter: brightness(1.15);
   transform: translateY(-2px);
 }
 
-.btn-osrs:active {
+.btn-classic:active {
   transform: translateY(1px);
   box-shadow: 
     0 2px 5px rgba(0,0,0,0.6), 

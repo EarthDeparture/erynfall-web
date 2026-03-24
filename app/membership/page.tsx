@@ -19,7 +19,7 @@ export default function Membership() {
         </ul>
 
         <div className="text-center my-10">
-          <button className="btn-osrs btn-create mx-auto">
+          <button className="btn-classic btn-create mx-auto">
             <span className="btn-text">GET MEMBERSHIP</span>
             <span className="btn-sub">Starting at $10.99/mo</span>
           </button>

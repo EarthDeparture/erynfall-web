@@ -3,7 +3,7 @@ import './globals.css';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Erynfall | Old School MMORPG',
+  title: 'Erynfall | Classic MMORPG',
   description: 'Forge your path in a world left in ruin',
 };
 
@@ -23,7 +23,7 @@ export default function RootLayout({
         />
       </head>
       <body>
-        {/* OSRS Style Top Nav */}
+        {/* Classic Style Top Nav */}
         <nav className="os-nav">
           <div className="nav-inner">
             <Link href="/" className="nav-link">Home</Link>

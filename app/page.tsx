@@ -17,11 +17,11 @@ export default async function Home() {
     <>
       <div className="cta-banner">
         <div className="cta-inner">
-          <Link href="#" className="btn-osrs btn-create">
+          <Link href="#" className="btn-classic btn-create">
             <span className="btn-text">NEW USER</span>
             <span className="btn-sub">Create Account</span>
           </Link>
-          <Link href="#" className="btn-osrs btn-play">
+          <Link href="#" className="btn-classic btn-play">
             <span className="btn-text">PLAY NOW</span>
             <span className="btn-sub">Existing User</span>
           </Link>
