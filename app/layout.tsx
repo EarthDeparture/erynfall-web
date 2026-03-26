@@ -1,17 +1,17 @@
 import type { Metadata } from 'next';
-import { Silkscreen, Noto_Sans_JP } from 'next/font/google';
+import { Cinzel_Decorative, Cormorant_Garamond } from 'next/font/google';
 import './globals.css';
 
-const silkscreen = Silkscreen({
+const cinzelDecorative = Cinzel_Decorative({
   variable: '--font-display',
   subsets: ['latin'],
-  weight: ['400', '700'],
+  weight: ['400', '700', '900'],
 });
 
-const notoSansJp = Noto_Sans_JP({
+const cormorantGaramond = Cormorant_Garamond({
   variable: '--font-body',
   subsets: ['latin'],
-  weight: ['400', '700'],
+  weight: ['400', '500', '700'],
 });
 
 export const metadata: Metadata = {
@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${silkscreen.variable} ${notoSansJp.variable}`}>
+      <body className={`${cinzelDecorative.variable} ${cormorantGaramond.variable}`}>
         {children}
       </body>
     </html>

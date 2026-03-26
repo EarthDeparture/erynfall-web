@@ -17,10 +17,7 @@ export default function Home() {
           <p className="subline">A story-heavy retro action RPG is nearing launch.</p>
 
           <div className="cta-row">
-            <a href="https://store.steampowered.com" target="_blank" rel="noreferrer" className="cta-btn">
-              Wishlist
-            </a>
-            <a href="https://discord.gg" target="_blank" rel="noreferrer" className="cta-btn is-secondary">
+            <a href="https://discord.gg/WNeMywCP" target="_blank" rel="noreferrer" className="cta-btn is-secondary">
               Join Discord
             </a>
           </div>
@@ -43,8 +40,9 @@ export default function Home() {
       </main>
 
       <footer className="footer">
-        <a href="https://x.com" target="_blank" rel="noreferrer">X / @erynfall</a>
-        <a href="mailto:hello@erynfall.com">hello@erynfall.com</a>
+        <a href="https://x.com/ErynFallGame" target="_blank" rel="noreferrer">X / @ErynFallGame</a>
+        <a href="https://discord.gg/WNeMywCP" target="_blank" rel="noreferrer">discord.gg/WNeMywCP</a>
+        <a href="mailto:support@erynfall.com">support@erynfall.com</a>
         <small>© 2026 Erynfall Studio</small>
       </footer>
     </div>
