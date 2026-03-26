@@ -112,27 +112,91 @@ body {
   font-size: clamp(0.95rem, 1.6vw, 1.15rem);
 }
 
-.lang-switch {
-  position: fixed;
-  right: 0.7rem;
-  top: 0.7rem;
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.waitlist-wrap {
+  margin-top: 1.6rem;
+}
+
+.waitlist-title {
+  margin: 0 0 0.5rem;
+  color: #d8c9a7;
+  font-size: 1.02rem;
+}
+
+.waitlist-form {
   display: flex;
-  gap: 0.35rem;
-  z-index: 4;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
-.lang-btn {
-  border: 1px solid #7f6b42;
-  color: #e8dcc0;
-  background: linear-gradient(180deg, #5b4c2f 0%, #40331f 100%);
-  padding: 0.28rem 0.45rem;
+.waitlist-input {
+  width: min(360px, 100%);
+  padding: 0.78rem 0.85rem;
+  border: 1px solid #8c7750;
+  background: linear-gradient(180deg, rgba(13, 19, 28, 0.95) 0%, rgba(18, 23, 34, 0.95) 100%);
+  color: #ebe0c7;
+  font-family: var(--font-body), serif;
+  font-size: 1rem;
+}
+
+.waitlist-input::placeholder {
+  color: #9d947e;
+}
+
+.waitlist-input:focus {
+  outline: 1px solid #bfa571;
+  border-color: #bfa571;
+}
+
+.waitlist-submit {
+  min-width: 170px;
+  border: 1px solid #aa9462;
+  background: linear-gradient(180deg, #7d6841 0%, var(--btn) 56%, var(--btn-strong) 100%);
+  color: #f3e7ca;
+  padding: 0.78rem 1rem;
   font-family: var(--font-display), serif;
-  font-size: 0.68rem;
+  font-size: 0.84rem;
+  letter-spacing: 0.08em;
+  box-shadow: inset 0 0 0 1px rgba(240, 219, 176, 0.25), 0 8px 14px rgba(0, 0, 0, 0.28);
+  transition: transform 180ms ease, background 180ms ease, box-shadow 180ms ease;
 }
 
-.lang-btn.is-active {
-  background: linear-gradient(180deg, #d8c39a 0%, #b39a67 100%);
-  color: #2d2314;
+.waitlist-submit:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(180deg, #90774a 0%, #6d5a38 56%, #4f4128 100%);
+  box-shadow: inset 0 0 0 1px rgba(240, 219, 176, 0.36), 0 12px 18px rgba(0, 0, 0, 0.32);
+}
+
+.waitlist-submit:disabled {
+  opacity: 0.7;
+  transform: none;
+  cursor: default;
+}
+
+.waitlist-feedback {
+  min-height: 1.5rem;
+  margin: 0.55rem 0 0;
+  font-size: 0.95rem;
+}
+
+.waitlist-feedback.is-success {
+  color: #d2e9c9;
+}
+
+.waitlist-feedback.is-error {
+  color: #e4b6a2;
 }
 
 .moon {
@@ -343,5 +407,14 @@ body {
 
   .media-panel {
     grid-template-columns: 1fr;
+  }
+
+  .waitlist-title {
+    font-size: 0.96rem;
+  }
+
+  .waitlist-submit,
+  .waitlist-input {
+    width: 100%;
   }
 }

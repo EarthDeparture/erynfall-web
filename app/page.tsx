@@ -1,11 +1,9 @@
+import WaitlistForm from '@/components/WaitlistForm';
+
 export default function Home() {
   return (
     <div className="page-shell">
       <header className="hero" role="banner">
-        <div className="lang-switch" aria-label="language toggle preview">
-          <button type="button" className="lang-btn is-active">ENG</button>
-          <button type="button" className="lang-btn">JPN</button>
-        </div>
         <div className="hero-inner">
           <span className="shooting-star" aria-hidden="true" />
           <span className="moon" aria-hidden="true" />
@@ -15,6 +13,8 @@ export default function Home() {
           <h1 className="brand">ERYNFALL</h1>
           <p className="tagline">Beyond the city walls, an untamed realm waits to be discovered.</p>
           <p className="subline">A medieval fantasy adventure is nearing launch.</p>
+
+          <WaitlistForm />
 
           <div className="cta-row">
             <a href="https://discord.gg/WNeMywCP" target="_blank" rel="noreferrer" className="cta-btn is-secondary">
