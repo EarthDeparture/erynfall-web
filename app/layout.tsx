@@ -1,17 +1,17 @@
 import type { Metadata } from 'next';
-import { Cinzel_Decorative, Cormorant_Garamond } from 'next/font/google';
+import { Alegreya_SC, Crimson_Text } from 'next/font/google';
 import './globals.css';
 
-const cinzelDecorative = Cinzel_Decorative({
+const alegreyaSc = Alegreya_SC({
   variable: '--font-display',
   subsets: ['latin'],
-  weight: ['400', '700', '900'],
+  weight: ['400', '700', '800', '900'],
 });
 
-const cormorantGaramond = Cormorant_Garamond({
+const crimsonText = Crimson_Text({
   variable: '--font-body',
   subsets: ['latin'],
-  weight: ['400', '500', '700'],
+  weight: ['400', '600', '700'],
 });
 
 export const metadata: Metadata = {
@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${cinzelDecorative.variable} ${cormorantGaramond.variable}`}>
+      <body className={`${alegreyaSc.variable} ${crimsonText.variable}`}>
         {children}
       </body>
     </html>

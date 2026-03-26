@@ -13,8 +13,8 @@ export default function Home() {
 
           <p className="kicker">UPCOMING GAME</p>
           <h1 className="brand">ERYNFALL</h1>
-          <p className="tagline">If you do not witness it, does it still exist?</p>
-          <p className="subline">A story-heavy retro action RPG is nearing launch.</p>
+          <p className="tagline">Beyond the city walls, an untamed realm waits to be discovered.</p>
+          <p className="subline">A medieval fantasy adventure is nearing launch.</p>
 
           <div className="cta-row">
             <a href="https://discord.gg/WNeMywCP" target="_blank" rel="noreferrer" className="cta-btn is-secondary">
@@ -41,7 +41,6 @@ export default function Home() {
 
       <footer className="footer">
         <a href="https://x.com/ErynFallGame" target="_blank" rel="noreferrer">X / @ErynFallGame</a>
-        <a href="https://discord.gg/WNeMywCP" target="_blank" rel="noreferrer">discord.gg/WNeMywCP</a>
         <a href="mailto:support@erynfall.com">support@erynfall.com</a>
         <small>© 2026 Erynfall Studio</small>
       </footer>
