@@ -9,10 +9,10 @@ export default function Home() {
           <span className="moon" aria-hidden="true" />
           <span className="watcher" aria-hidden="true" />
 
-          <p className="kicker">UPCOMING GAME</p>
+          <p className="kicker">MEDIEVAL FANTASY MMORPG</p>
           <h1 className="brand">ERYNFALL</h1>
-          <p className="tagline">Beyond the city walls, an untamed realm waits to be discovered.</p>
-          <p className="subline">A medieval fantasy adventure is nearing launch.</p>
+          <p className="tagline">A faithful recreation of classic MMORPG combat and progression.</p>
+          <p className="subline">Medieval fantasy adventure built with server-first architecture and authentic mechanics.</p>
 
           <WaitlistForm />
 
@@ -26,16 +26,28 @@ export default function Home() {
 
       <main className="content-wrap">
         <section className="panel info-panel" aria-labelledby="launch-heading">
-          <h2 id="launch-heading">Launch Window</h2>
-          <p>Targeting Q4 2026 on PC first, with console plans to follow.</p>
-          <p>Join the newsletter for test build invites, soundtrack previews, and milestone updates.</p>
+          <h2 id="launch-heading">Development Progress</h2>
+          <p>Combat, skills, account systems, and persistence complete. Polish phase in progress.</p>
+          <p>Join the newsletter for alpha test invites, soundtrack previews, and milestone updates.</p>
         </section>
 
-        <section className="panel media-panel" aria-label="teaser stills">
-          <div className="shot is-1" />
-          <div className="shot is-2" />
-          <div className="shot is-3" />
-          <div className="shot is-4" />
+        <section className="panel features-panel" aria-label="development features">
+          <div className="feature-card">
+            <h3 className="feature-title">Combat System</h3>
+            <p className="feature-desc">Authentic hit/miss formulas, damage calculations, and equipment bonuses</p>
+          </div>
+          <div className="feature-card">
+            <h3 className="feature-title">Skills Progression</h3>
+            <p className="feature-desc">Six trainable skills (Attack, Strength, Defence, Hitpoints, Ranged, Magic) with traditional XP curves</p>
+          </div>
+          <div className="feature-card">
+            <h3 className="feature-title">Account System</h3>
+            <p className="feature-desc">Secure authentication with automatic registration and persistent saves</p>
+          </div>
+          <div className="feature-card">
+            <h3 className="feature-title">Equipment & Inventory</h3>
+            <p className="feature-desc">Full equipment slots with stat bonuses, 20-slot inventory, and item pickup mechanics</p>
+          </div>
         </section>
       </main>
 
